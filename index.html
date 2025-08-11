@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M'hammed Ben Bassidi</title>
+    <!-- Balises méta Open Graph pour l'aperçu du lien -->
+    <meta property="og:title" content="M'hammed Ben Bassidi">
+    <meta property="og:description" content="M'hammed Ben Bassidi, Photographe">
+    <meta property="og:image" content="Cat.JPG">
+    <meta property="og:url" content="https://github.com/Yoann-dev0711/mhammed.benbassidi">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>M'hammed Ben Bassidi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #6c757d;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            font-size: 18px;
+        }
+
+        header {
+            background-color: var(--light-color);
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--primary-color);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--dark-color);
+        }
+
+        nav a {
+            color: var(--light-color);
+            padding: 14px 20px;
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #adb5bd;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        section {
+            padding: 40px 0;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 50%;
+            height: auto;
+            border-radius: 4px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+            opacity: 0.9;
+        }
+
+        .copyright-notice {
+            text-align: center;
+            font-size: 1rem;
+            color: var(--secondary-color);
+            margin-top: 10px;
+        }
+
+        .identity-photo {
+            width: 200px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .identity-info {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .info-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+        }
+
+        .references ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .references li {
+            background-color: var(--light-color);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 4px solid var(--dark-color);
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 1.2rem;
+        }
+
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .lang-switcher button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-left: 5px;
+            border-radius: 3px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .lang-switcher button:hover {
+            transform: scale(1.1);
+        }
+
+        .lang-switcher img {
+            width: 30px;
+            height: auto;
+        }
+
+        .ar {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            font-size: 20px;
+        }
+
+        .ar header h1 {
+            font-size: 3.7rem;
+        }
+
+        .ar header p {
+            font-size: 1.7rem;
+        }
+
+        .ar nav a {
+            font-size: 1.4rem;
+        }
+
+        .ar section h2 {
+            font-size: 2.7rem;
+        }
+
+        .ar .copyright-notice {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .identity-info {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher">
+        <button onclick="switchLanguage('fr')" title="Français"><img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" alt="Français"></button>
+        <button onclick="switchLanguage('ar')" title="العربية"><img src="https://cdn.countryflags.com/thumbs/morocco/flag-400.png" alt="العربية"></button>
+    </div>
+    <header>
+        <h1 id="title">M'hammed Ben Bassidi</h1>
+        <p id="subtitle">Photographe</p>
+    </header>
+    <nav>
+        <a href="#identity" id="nav-identity">Identité</a>
+        <a href="#collective-exhibitions" id="nav-collective">Expositions Collectives</a>
+        <a href="#individual-exhibitions" id="nav-individual">Expositions Individuelles</a>
+        <a href="#references" id="nav-references">Références</a>
+        <a href="#gallery" id="nav-gallery">Galerie</a>
+    </nav>
+    <div class="container">
+        <section id="identity">
+            <h2 id="identity-title">Fiche d'identité</h2>
+            <div class="identity-info">
+                <img src="https://via.placeholder.com/200" alt="M'hammed Ben Bassidi" class="identity-photo">
+                <ul class="info-list">
+                    <li><strong id="last-name">Nom de famille :</strong> Ben Bassidi</li>
+                    <li><strong id="first-name">Prénom :</strong> M'hammed</li>
+                    <li><strong id="birth-date">Date de naissance :</strong> 30 juin 1949</li>
+                    <li><strong id="birth-place">Lieu de naissance :</strong> Safi</li>
+                </ul>
+            </div>
+        </section>
+        <section id="collective-exhibitions">
+            <h2 id="collective-title">Expositions Collectives</h2>
+            <ul id="collective-list">
+                <li>1995 Galerie Wafa Bank, Casablanca</li>
+                <li>1992 Mars, Complexe Culturel, Meknès</li>
+                <li>1990 Complexe Culturel, Meknès</li>
+                <li>1990 Premier Prix / Deuxième Session de l'Exposition Nationale de Photographie</li>
+                <li>1989 Festival Paris 89, France</li>
+                <li>1988 Premier Prix / Deuxième Session de l'Exposition Nationale de Photographie</li>
+                <li>1979 Centre Culturel Français, Casablanca</li>
+                <li>1978 Centre Culturel Français, Casablanca</li>
+            </ul>
+        </section>
+        <section id="individual-exhibitions">
+            <h2 id="individual-title">Expositions Individuelles</h2>
+            <ul id="individual-list">
+                <li>1995 Mai, Complexe Culturel Sidi Belyout, Casablanca</li>
+                <li>1995 Janvier/Février, Galerie des Arts Ben M'sik, Casablanca</li>
+                <li>1994 Cinquième Session du Salon International du Livre, Casablanca</li>
+                <li>1993 Janvier/Février, Galerie El Badii, Meknès</li>
+                <li>1990 Janvier, Galerie Perrotin, Tanger</li>
+                <li>1989 Juin/Juillet, Salon du Livre de Photographie</li>
+                <li>1986 Congrès National de la Confédération Démocratique du Travail</li>
+            </ul>
+        </section>
+        <section id="references" class="references">
+            <h2 id="references-title">Références</h2>
+            <ul id="references-list">
+                <li>Référence 1: Description de la référence ou citation.</li>
+                <li>Référence 2: Description de la référence ou citation.</li>
+                <li>Référence 3: Description de la référence ou citation.</li>
+            </ul>
+        </section>
+        <section id="gallery">
+            <h2>Galerie</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="001.jpg" alt="Photo 1">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="002.JPG" alt="Photo 2">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="003.JPG" alt="Photo 3">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="11.JPG" alt="Photo 4">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="013.JPG" alt="Photo 5">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="16 .JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="17.JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p id="copyright">&copy; 2023 M'hammed Ben Bassidi</p>
+    </footer>
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'ar') {
+                document.body.classList.add('ar');
+                document.getElementById('title').textContent = 'المهدي بن بصيدي';
+                document.getElementById('subtitle').textContent = 'مصور فوتوغرافي';
+                document.getElementById('nav-identity').textContent = 'الهوية';
+                document.getElementById('nav-collective').textContent = 'المعارض الجماعية';
+                document.getElementById('nav-individual').textContent = 'المعارض الفردية';
+                document.getElementById('nav-references').textContent = 'المراجع';
+                document.getElementById('nav-gallery').textContent = 'المعرض';
+                document.getElementById('identity-title').textContent = 'ورقة تعريفية بالمعارض';
+                document.querySelector('.info-list').innerHTML = `
+                    <li><strong>الاسم العائلي:</strong> بن بصيدي</li>
+                    <li><strong>الاسم الشخصي:</strong> المهدي</li>
+                    <li><strong>تاريخ الميلاد:</strong> 30 يونيو 1949</li>
+                    <li><strong>مكان الميلاد:</strong> أسفي</li>
+                `;
+                document.getElementById('collective-title').textContent = 'المعارض الجماعية';
+                document.getElementById('collective-list').innerHTML = `
+                    <li>1995 معرض غاليري وفا بنك الدار البيضاء</li>
+                    <li>1992 مارس المجمع التقافي مكناس</li>
+                    <li>1990 المجمع التقافي مكناس</li>
+                    <li>1990 الجائزة الأولى/الدورة الثانية للمعرض الوطني للتصوير الفوتوغرافي</li>
+                    <li>1989 مهرجان باريس 89 فرنسا</li>
+                    <li>1988 الجائزة الأولى/الدورة الثانية للمعرض الوطني للتصوير الفوتوغرافي</li>
+                    <li>1979 المركز التقافي الفرنسي الدار البيضاء</li>
+                    <li>1978 المركز التقافي الفرنسي الدار البيضاء</li>
+                `;
+                document.getElementById('individual-title').textContent = 'المعارض الفردية';
+                document.getElementById('individual-list').innerHTML = `
+                    <li>1995 مايو المجمع التقافي سيدي بليوط الدار البيضاء</li>
+                    <li>1995 يناير/فبراير المعرض الاداب بنمسيك الدار البيضاء</li>
+                    <li>1994 الدورة الخامسة للمعرض الدولي للكتاب الدار البيضاء</li>
+                    <li>1993 يناير/فبراير غاليري البديع مكناس</li>
+                    <li>1990 يناير غاليري بيرلوتشي طوان</li>
+                    <li>1989 يونيو/يوليو معرض الكتاب للتصوير الفوتوغرافي</li>
+                    <li>1986 المؤتمر الوطني للكونفدرالية الديمقراطية للشغل</li>
+                `;
+                document.getElementById('references-title').textContent = 'المراجع';
+                document.getElementById('references-list').innerHTML = `
+                    <li>المرجع 1: وصف المرجع أو الاقتباس.</li>
+                    <li>المرجع 2: وصف المرجع أو الاقتباس.</li>
+                    <li>المرجع 3: وصف المرجع أو الاقتباس.</li>
+                `;
+                document.getElementById('copyright').textContent = '&copy; 2023 المهدي بن بصيدي';
+                document.querySelectorAll('.copyright-notice').forEach(function(el) {
+                    el.textContent = '© المهدي بن بصيدي';
+                });
+            } else {
+                document.body.classList.remove('ar');
+                document.getElementById('title').textContent = 'M\'hammed Ben Bassidi';
+                document.getElementById('subtitle').textContent = 'Photographe';
+                document.getElementById('nav-identity').textContent = 'Identité';
+                document.getElementById('nav-collective').textContent = 'Expositions Collectives';
+                document.getElementById('nav-individual').textContent = 'Expositions Individuelles';
+                document.getElementById('nav-references').textContent = 'Références';
+                document.getElementById('nav-gallery').textContent = 'Galerie';
+                document.getElementById('identity-title').textContent = 'Fiche d\'identité';
+                document.querySelector('.info-list').innerHTML = `
+                    <li><strong>Nom de famille :</strong> Ben Bassidi</li>
+                    <li><strong>Prénom :</strong> M'hammed</li>
+                    <li><strong>Date de naissance :</strong> 30 juin 1949</li>
+                    <li><strong>Lieu de naissance :</strong> Safi</li>
+                `;
+                document.getElementById('collective-title').textContent = 'Expositions Collectives';
+                document.getElementById('collective-list').innerHTML = `
+                    <li>1995 Galerie Wafa Bank, Casablanca</li>
+                    <li>1992 Mars, Complexe Culturel, Meknès</li>
+                    <li>1990 Complexe Culturel, Meknès</li>
+                    <li>1990 Premier Prix / Deuxième Session de l'Exposition Nationale de Photographie</li>
+                    <li>1989 Festival Paris 89, France</li>
+                    <li>1988 Premier Prix / Deuxième Session de l'Exposition Nationale de Photographie</li>
+                    <li>1979 Centre Culturel Français, Casablanca</li>
+                    <li>1978 Centre Culturel Français, Casablanca</li>
+                `;
+                document.getElementById('individual-title').textContent = 'Expositions Individuelles';
+                document.getElementById('individual-list').innerHTML = `
+                    <li>1995 Mai, Complexe Culturel Sidi Belyout, Casablanca</li>
+                    <li>1995 Janvier/Février, Galerie des Arts Ben M'sik, Casablanca</li>
+                    <li>1994 Cinquième Session du Salon International du Livre, Casablanca</li>
+                    <li>1993 Janvier/Février, Galerie El Badii, Meknès</li>
+                    <li>1990 Janvier, Galerie Perrotin, Tanger</li>
+                    <li>1989 Juin/Juillet, Salon du Livre de Photographie</li>
+                    <li>1986 Congrès National de la Confédération Démocratique du Travail</li>
+                `;
+                document.getElementById('references-title').textContent = 'Références';
+                document.getElementById('references-list').innerHTML = `
+                    <li>Référence 1: Description de la référence ou citation.</li>
+                    <li>Référence 2: Description de la référence ou citation.</li>
+                    <li>Référence 3: Description de la référence ou citation.</li>
+                `;
+                document.getElementById('copyright').textContent = '&copy; 2023 M\'hammed Ben Bassidi';
+                document.querySelectorAll('.copyright-notice').forEach(function(el) {
+                    el.textContent = '© M\'hammed Ben Bassidi';
+                });
+            }
+        }
+    </script>
+</body>
+</html>
