@@ -2,17 +2,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M'hammed Ben Bassidi</title>
-    <!-- Balises méta Open Graph pour l'aperçu du lien -->
-    <meta property="og:title" content="M'hammed Ben Bassidi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="M'hammed Ben Bassidi">
     <meta property="og:description" content="M'hammed Ben Bassidi, Photographe">
     <meta property="og:image" content="Cat.JPG">
-    <meta property="og:url" content="https://github.com/Yoann-dev0711/mhammed.benbassidi">
+    <meta property="og:url" content="https://votre-utilisateur.github.io/votre-depot">
     <meta property="og:type" content="website">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
     <title>M'hammed Ben Bassidi</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -58,6 +53,18 @@
             background-color: var(--dark-color);
         }
 
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
         nav a {
             color: var(--light-color);
             padding: 14px 20px;
@@ -65,6 +72,7 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.2rem;
             transition: color 0.3s ease;
+            display: block;
         }
 
         nav a:hover {
@@ -99,7 +107,8 @@
             position: relative;
             margin-bottom: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
         .gallery img {
@@ -119,6 +128,7 @@
             font-size: 1rem;
             color: var(--secondary-color);
             margin-top: 10px;
+            width: 100%;
         }
 
         .identity-photo {
@@ -217,9 +227,43 @@
             font-size: 1.2rem;
         }
 
+        /* Style pour le menu burger */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: var(--light-color);
+            margin: 3px 0;
+            transition: 0.4s;
+        }
+
         @media (max-width: 768px) {
-            nav {
+            .menu-toggle {
+                display: flex;
+            }
+
+            nav ul {
+                display: none;
                 flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: var(--dark-color);
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav li {
+                margin: 0;
+                text-align: center;
             }
 
             .identity-info {
@@ -235,16 +279,23 @@
         <button onclick="switchLanguage('ar')" title="العربية"><img src="https://cdn.countryflags.com/thumbs/morocco/flag-400.png" alt="العربية"></button>
     </div>
     <header>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <h1 id="title">M'hammed Ben Bassidi</h1>
         <p id="subtitle">Photographe</p>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#identity" id="nav-identity">Identité</a></li>
+                <li><a href="#collective-exhibitions" id="nav-collective">Expositions Collectives</a></li>
+                <li><a href="#individual-exhibitions" id="nav-individual">Expositions Individuelles</a></li>
+                <li><a href="#references" id="nav-references">Références</a></li>
+                <li><a href="#gallery" id="nav-gallery">Galerie</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#identity" id="nav-identity">Identité</a>
-        <a href="#collective-exhibitions" id="nav-collective">Expositions Collectives</a>
-        <a href="#individual-exhibitions" id="nav-individual">Expositions Individuelles</a>
-        <a href="#references" id="nav-references">Références</a>
-        <a href="#gallery" id="nav-gallery">Galerie</a>
-    </nav>
     <div class="container">
         <section id="identity">
             <h2 id="identity-title">Fiche d'identité</h2>
@@ -294,7 +345,8 @@
         <section id="gallery">
             <h2>Galerie</h2>
             <div class="gallery">
-                <div class="gallery-item">
+                
+				<div class="gallery-item">
                     <img src="001.jpg" alt="Photo 1">
                     <p class="copyright-notice">© M'hammed Ben Bassidi</p>
                 </div>
@@ -322,6 +374,46 @@
                     <img src="17.JPG" alt="Photo 6">
                     <p class="copyright-notice">© M'hammed Ben Bassidi</p>
                 </div>
+				<div class="gallery-item">
+                    <img src="33.JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="35.JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="49.JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="50.JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="54.jpg" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="65 .JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="67 .JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="68 .JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="69.JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
+				<div class="gallery-item">
+                    <img src="Ayoub 218.JPG" alt="Photo 6">
+                    <p class="copyright-notice">© M'hammed Ben Bassidi</p>
+                </div>
             </div>
         </section>
     </div>
@@ -329,6 +421,11 @@
         <p id="copyright">&copy; 2023 M'hammed Ben Bassidi</p>
     </footer>
     <script>
+        // Toggle menu for mobile
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-list').classList.toggle('show');
+        });
+
         function switchLanguage(lang) {
             if (lang === 'ar') {
                 document.body.classList.add('ar');
