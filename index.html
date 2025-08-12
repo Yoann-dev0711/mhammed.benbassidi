@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="M'hammed Ben Bassidi">
-    <meta property="og:description" content="M'hammed Ben Bassidi, Photographe">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="M'hammed BEN BASSIDI - المهدي بن بصيدي">
+    <meta property="og:description" content="M'hammed BEN BASSIDI - Photographe">
     <meta property="og:image" content="https://yoann-dev0711.github.io/mhammed.benbassidi/Cat.JPG">
     <meta property="og:url" content="https://yoann-dev0711.github.io/mhammed.benbassidi">
     <meta property="og:type" content="website">
-    <title>M'hammed Ben Bassidi</title>
+    <title>المهدي بن بصيدي</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -19,13 +21,14 @@
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Cairo', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: var(--light-color);
             color: var(--primary-color);
-            font-size: 18px;
+            font-size: 20px;
+            direction: rtl;
         }
 
         header {
@@ -37,13 +40,13 @@
 
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
+            font-size: 3.7rem;
             margin: 0;
             color: var(--primary-color);
         }
 
         header p {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             color: var(--secondary-color);
         }
 
@@ -70,7 +73,7 @@
             padding: 14px 20px;
             text-decoration: none;
             font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             transition: color 0.3s ease;
             display: block;
         }
@@ -92,7 +95,7 @@
 
         section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2.7rem;
             margin-bottom: 20px;
             color: var(--primary-color);
         }
@@ -125,7 +128,7 @@
 
         .copyright-notice {
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: var(--secondary-color);
             margin-top: 10px;
             width: 100%;
@@ -227,24 +230,11 @@
             font-size: 1.2rem;
         }
 
-        /* Style pour le menu burger */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .menu-toggle span {
-            height: 3px;
-            width: 25px;
-            background-color: var(--light-color);
-            margin: 3px 0;
-            transition: 0.4s;
-        }
-
         @media (max-width: 768px) {
             .menu-toggle {
                 display: flex;
+                flex-direction: column;
+                cursor: pointer;
             }
 
             nav ul {
@@ -284,69 +274,68 @@
             <span></span>
             <span></span>
         </div>
-        <h1 id="title">M'hammed Ben Bassidi</h1>
-        <p id="subtitle">Photographe</p>
-        <nav>
-            <ul id="nav-list">
-                <li><a href="#identity" id="nav-identity">Identité</a></li>
-                <li><a href="#collective-exhibitions" id="nav-collective">Expositions Collectives</a></li>
-                <li><a href="#individual-exhibitions" id="nav-individual">Expositions Individuelles</a></li>
-                <li><a href="#references" id="nav-references">Références</a></li>
-                <li><a href="#gallery" id="nav-gallery">Galerie</a></li>
-            </ul>
-        </nav>
+        <h1 id="title">المهدي بن بصيدي</h1>
+        <p id="subtitle">مصور فوتوغرافي</p>
     </header>
+    <nav>
+        <ul id="nav-list">
+            <li><a href="#identity" id="nav-identity">الهوية</a></li>
+            <li><a href="#collective-exhibitions" id="nav-collective">المعارض الجماعية</a></li>
+            <li><a href="#individual-exhibitions" id="nav-individual">المعارض الفردية</a></li>
+            <li><a href="#references" id="nav-references">المراجع</a></li>
+            <li><a href="#gallery" id="nav-gallery">المعرض</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <section id="identity">
-            <h2 id="identity-title">Fiche d'identité</h2>
+            <h2 id="identity-title">ورقة تعريفية بالمعارض</h2>
             <div class="identity-info">
-                <img src="Cat.JPG" alt="M'hammed Ben Bassidi" class="identity-photo">
+                <img src="https://via.placeholder.com/200" alt="المهدي بن بصيدي" class="identity-photo">
                 <ul class="info-list">
-                    <li><strong id="last-name">Nom de famille :</strong> Ben Bassidi</li>
-                    <li><strong id="first-name">Prénom :</strong> M'hammed</li>
-                    <li><strong id="birth-date">Date de naissance :</strong> 30 juin 1949</li>
-                    <li><strong id="birth-place">Lieu de naissance :</strong> Safi</li>
+                    <li><strong>الاسم العائلي:</strong> بن بصيدي</li>
+                    <li><strong>الاسم الشخصي:</strong> المهدي</li>
+                    <li><strong>تاريخ الميلاد:</strong> 30 يونيو 1949</li>
+                    <li><strong>مكان الميلاد:</strong> أسفي</li>
                 </ul>
             </div>
         </section>
         <section id="collective-exhibitions">
-            <h2 id="collective-title">Expositions Collectives</h2>
+            <h2 id="collective-title">المعارض الجماعية</h2>
             <ul id="collective-list">
-                <li>1995 Galerie Wafa Bank, Casablanca</li>
-                <li>1992 Mars, Complexe Culturel, Meknès</li>
-                <li>1990 Complexe Culturel, Meknès</li>
-                <li>1990 Premier Prix / Deuxième Session de l'Exposition Nationale de Photographie</li>
-                <li>1989 Festival Paris 89, France</li>
-                <li>1988 Premier Prix / Deuxième Session de l'Exposition Nationale de Photographie</li>
-                <li>1979 Centre Culturel Français, Casablanca</li>
-                <li>1978 Centre Culturel Français, Casablanca</li>
+                <li>1995 معرض غاليري وفا بنك الدار البيضاء</li>
+                <li>1992 مارس المجمع التقافي مكناس</li>
+                <li>1990 المجمع التقافي مكناس</li>
+                <li>1990 الجائزة الأولى/الدورة الثانية للمعرض الوطني للتصوير الفوتوغرافي</li>
+                <li>1989 مهرجان باريس 89 فرنسا</li>
+                <li>1988 الجائزة الأولى/الدورة الثانية للمعرض الوطني للتصوير الفوتوغرافي</li>
+                <li>1979 المركز التقافي الفرنسي الدار البيضاء</li>
+                <li>1978 المركز التقافي الفرنسي الدار البيضاء</li>
             </ul>
         </section>
         <section id="individual-exhibitions">
-            <h2 id="individual-title">Expositions Individuelles</h2>
+            <h2 id="individual-title">المعارض الفردية</h2>
             <ul id="individual-list">
-                <li>1995 Mai, Complexe Culturel Sidi Belyout, Casablanca</li>
-                <li>1995 Janvier/Février, Galerie des Arts Ben M'sik, Casablanca</li>
-                <li>1994 Cinquième Session du Salon International du Livre, Casablanca</li>
-                <li>1993 Janvier/Février, Galerie El Badii, Meknès</li>
-                <li>1990 Janvier, Galerie Perrotin, Tanger</li>
-                <li>1989 Juin/Juillet, Salon du Livre de Photographie</li>
-                <li>1986 Congrès National de la Confédération Démocratique du Travail</li>
+                <li>1995 مايو المجمع التقافي سيدي بليوط الدار البيضاء</li>
+                <li>1995 يناير/فبراير المعرض الاداب بنمسيك الدار البيضاء</li>
+                <li>1994 الدورة الخامسة للمعرض الدولي للكتاب الدار البيضاء</li>
+                <li>1993 يناير/فبراير غاليري البديع مكناس</li>
+                <li>1990 يناير غاليري بيرلوتشي طوان</li>
+                <li>1989 يونيو/يوليو معرض الكتاب للتصوير الفوتوغرافي</li>
+                <li>1986 المؤتمر الوطني للكونفدرالية الديمقراطية للشغل</li>
             </ul>
         </section>
         <section id="references" class="references">
-            <h2 id="references-title">Références</h2>
+            <h2 id="references-title">المراجع</h2>
             <ul id="references-list">
-                <li>Référence 1: Description de la référence ou citation.</li>
-                <li>Référence 2: Description de la référence ou citation.</li>
-                <li>Référence 3: Description de la référence ou citation.</li>
+                <li>المرجع 1: وصف المرجع أو الاقتباس.</li>
+                <li>المرجع 2: وصف المرجع أو الاقتباس.</li>
+                <li>المرجع 3: وصف المرجع أو الاقتباس.</li>
             </ul>
         </section>
         <section id="gallery">
-            <h2>Galerie</h2>
+            <h2>المعرض</h2>
             <div class="gallery">
-                
-				<div class="gallery-item">
+                <div class="gallery-item">
                     <img src="001.jpg" alt="Photo 1">
                     <p class="copyright-notice">© M'hammed Ben Bassidi</p>
                 </div>
@@ -418,7 +407,7 @@
         </section>
     </div>
     <footer>
-        <p id="copyright">&copy; 2023 M'hammed Ben Bassidi</p>
+        <p id="copyright">&copy; 2023 المهدي بن بصيدي</p>
     </footer>
     <script>
         // Toggle menu for mobile
@@ -426,9 +415,16 @@
             document.getElementById('nav-list').classList.toggle('show');
         });
 
+        // Set the language to Arabic by default when the page loads
+        window.onload = function() {
+            switchLanguage('ar');
+        };
+
         function switchLanguage(lang) {
             if (lang === 'ar') {
                 document.body.classList.add('ar');
+                document.body.setAttribute('lang', 'ar');
+                document.body.setAttribute('dir', 'rtl');
                 document.getElementById('title').textContent = 'المهدي بن بصيدي';
                 document.getElementById('subtitle').textContent = 'مصور فوتوغرافي';
                 document.getElementById('nav-identity').textContent = 'الهوية';
@@ -476,6 +472,8 @@
                 });
             } else {
                 document.body.classList.remove('ar');
+                document.body.setAttribute('lang', 'fr');
+                document.body.setAttribute('dir', 'ltr');
                 document.getElementById('title').textContent = 'M\'hammed Ben Bassidi';
                 document.getElementById('subtitle').textContent = 'Photographe';
                 document.getElementById('nav-identity').textContent = 'Identité';
